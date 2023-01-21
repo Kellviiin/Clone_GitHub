@@ -1,0 +1,536 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*Reset.css up*/
+
+:root{
+    --color-neutral-10:#0d1117;
+    --color-neutral-20:#161b22;
+    --color-neutral-30:#21262d;
+    --color-neutral-40:#30363d;
+    --color-neutral-50:#8b949c;
+    --color-neutral-60:#c9d1d9;
+    --color-neutral-70:#ffffff;
+
+    --color-link:#58a6ff;
+    
+    
+
+}
+
+*{
+    font-family: system-ui, -app-system,BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-size: 14px;
+   
+}
+
+main{
+    height: 99.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-10);
+    color: var(--color-neutral-60);
+}
+
+.blockPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30%;
+    margin-top: 10%;
+    width: 30%;
+    box-sizing: border-box;
+    padding-top: 2%;
+    
+}
+
+.logoeNome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80% ;
+    padding-top: 10px;
+    
+}
+
+.logoeNome > p{
+    font-size:24px ;
+    font-weight: 300;
+}
+
+img{
+    height: 15%;
+    margin-bottom: 10%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 80%;
+    background-color: var(--color-neutral-20); 
+    border-radius: 6px; 
+    padding: 16px;  
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom:3.8%;
+    font-size: 13px;
+}
+
+input{
+    margin-bottom: 4.5%;
+    border-radius: 6px;
+    border: none;
+    padding: 4.8px;
+    color: var(--color-neutral-60);
+    background-color:var(--color-neutral-10);
+    font-size: 12px;
+}
+button{
+    border-radius: 6px;
+    padding: 7px;
+    background-color: #238636;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    color:var(--color-link) ;
+    text-decoration: none;
+}
+
+.criarConta{
+    margin-top: 10px;
+    height: 50px;
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-neutral-50);
+    border-radius: 6px;
+    font-size: 13.5px;
+    margin-bottom: 30px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+@media screen and (min-width:320px ) and (max-width:378px) {
+
+    .blockPrincipal{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30%;
+        margin-top: 10%;
+        width: 80%;
+        box-sizing: border-box;
+        padding-top: 2%;
+        
+    }
+    
+  
+.logoeNome > p{
+    font-size:20px ;
+    font-weight: 300;
+} 
+
+
+label{
+    margin-bottom:3.8%;
+    font-size: 9px;
+}
+
+
+.criarConta{
+    margin-top: 10px;
+    height: 50px;
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-neutral-50);
+    border-radius: 6px;
+    font-size: 10px;
+    margin-bottom: 30px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    font-size: 10px;
+}
+
+button{
+    border-radius: 6px;
+    padding: 7px;
+    background-color: #238636;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+    
+}
+
+@media screen and (min-width:376px ) and (max-width:426px) {
+
+    .blockPrincipal{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30%;
+        margin-top: 10%;
+        width: 80%;
+        box-sizing: border-box;
+        padding-top: 2%;
+        
+    }
+    
+  
+.logoeNome > p{
+    font-size:20px ;
+    font-weight: 300;
+} 
+
+
+label{
+    margin-bottom:3.8%;
+    font-size: 10px;
+}
+
+
+.criarConta{
+    margin-top: 10px;
+    height: 50px;
+    width: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-neutral-50);
+    border-radius: 6px;
+    font-size: 11px;
+    margin-bottom: 30px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    font-size: 11px;
+}
+
+button{
+    border-radius: 6px;
+    padding: 7px;
+    background-color: #238636;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+    
+}
+
+@media screen and (min-width:426px ) and (max-width:768px) {
+
+    .blockPrincipal{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30%;
+        margin-top: 10%;
+        width: 80%;
+        height: 80%;
+        box-sizing: border-box;
+        padding-top: 2%;
+        
+    }
+
+    
+  
+.logoeNome > p{
+    font-size:35px ;
+    font-weight: 300;
+} 
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 100%;
+    height: 36.2%;
+    background-color: var(--color-neutral-20); 
+    border-radius: 6px; 
+    padding: 16px;  
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+
+label{
+    margin-bottom:3.8%;
+    font-size: 25px;
+}
+
+input{
+    margin-bottom: 4.5%;
+    border-radius: 6px;
+    border: none;
+    padding: 20px;
+    color: var(--color-neutral-60);
+    background-color:var(--color-neutral-10);
+    font-size: 22px;
+}
+
+
+.criarConta{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-neutral-50);
+    border-radius: 6px;
+    font-size: 23px;
+    margin-bottom: 45px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 23px;
+}
+
+button{
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #238636;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+    
+}
+
+@media screen and (min-width:768px ) and (max-width:1024px) {
+
+    .blockPrincipal{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30%;
+        margin-top: 10%;
+        width: 80%;
+        height: 80%;
+        box-sizing: border-box;
+        padding-top: 2%;
+        
+    }
+
+    
+  
+.logoeNome > p{
+    font-size:40px ;
+    font-weight: 300;
+} 
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 100%;
+    height: 37.5%;
+    background-color: var(--color-neutral-20); 
+    border-radius: 6px; 
+    padding: 16px;  
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+
+label{
+    margin-bottom:3.8%;
+    font-size: 30px;
+}
+
+input{
+    margin-bottom: 4.5%;
+    border-radius: 6px;
+    border: none;
+    padding: 20px;
+    color: var(--color-neutral-60);
+    background-color:var(--color-neutral-10);
+    font-size: 25px;
+}
+
+
+.criarConta{
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-neutral-50);
+    border-radius: 6px;
+    font-size: 27px;
+    margin-bottom: 45px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 80.5%;
+    font-size: 27px;
+}
+
+button{
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #238636;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+}
+
+@media screen and (min-width:1024px ) and (max-width:1440px) {
+
+    .blockPrincipal{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30%;
+        margin-top: 10%;
+        width: 80%;
+        height: 80%;
+        box-sizing: border-box;
+        padding-top: 2%;
+        
+    }
+
+    
+  
+.logoeNome > p{
+    font-size:60px ;
+    font-weight: 300;
+} 
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 100%;
+    height: 39%;
+    background-color: var(--color-neutral-20); 
+    border-radius: 6px; 
+    padding: 16px;  
+    box-sizing: border-box;
+    margin-bottom: 23px;
+}
+
+
+
+label{
+    margin-bottom:3.8%;
+    font-size: 45px;
+}
+
+input{
+    margin-bottom: 4.5%;
+    border-radius: 6px;
+    border: none;
+    padding: 40px;
+    color: var(--color-neutral-60);
+    background-color:var(--color-neutral-10);
+    font-size: 35px;
+}
+
+
+.criarConta{
+    margin-top: 10px;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-neutral-50);
+    border-radius: 6px;
+    font-size: 40px;
+    margin-bottom: 78px;
+
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 40px;
+}
+
+button{
+    border-radius: 6px;
+    padding: 35px;
+    background-color: #238636;
+    border: none;
+    cursor: pointer;
+    font-size: 48px;
+}
+}
